@@ -1,6 +1,8 @@
+@ 非常重要的事情！ The most important thing!
+
 > [!CAUTION]
 > Due to financial challenges and uncertainties regarding the project's future direction, I have made the difficult decision to discontinue further development. This project was initially conceived on August 12, 2024, officially launched on January 18, 2025, and is
-> now being suspended as of October 30, 2025. I would like to extend my deepest gratitude to all supporters, contributors, and developers who have participated in secondary development throughout this journey.
+now being suspended as of October 30, 2025. I would like to extend my deepest gratitude to all supporters, contributors, and developers who have participated in secondary development throughout this journey.
 >
 > 由于资金方面的挑战以及对项目未来发展方向的不确定性，经过慎重考虑，我遗憾地决定暂停本项目的更新。该项目始于2024年8月12日，正式立项于2025年1月18日，今日（2025年10月30日）正式停止更新。在此，我向一直以来支持本项目、参与二次开发及做出贡献的各位致以最诚挚的感谢。
 
