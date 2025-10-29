@@ -1,5 +1,3 @@
----
-
 > [!CAUTION]
 > Due to financial challenges and uncertainties regarding the project's future direction, I have made the difficult decision to discontinue further development. This project was initially conceived on August 12, 2024, officially launched on January 18, 2025, and is
 > now being suspended as of October 30, 2025. I would like to extend my deepest gratitude to all supporters, contributors, and developers who have participated in secondary development throughout this journey.
