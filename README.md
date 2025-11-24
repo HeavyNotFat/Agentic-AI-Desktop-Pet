@@ -3,7 +3,7 @@
 > 🎧 *基于FreeEmote SDK的次世代桌宠 —— 轻量、美观、可扩展。*
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a90a6fc0-282a-4088-a3e0-46ce5534ebd2" width="160" alt="EmoteWidgetLogo">
+  <img src="https://github.com/user-attachments/assets/faa4741e-1837-4169-968d-0c1169934310" width="160" alt="EmoteWidgetLogo">
 </p>
 
 <p align="center">
