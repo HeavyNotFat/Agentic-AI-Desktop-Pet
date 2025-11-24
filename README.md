@@ -1,4 +1,4 @@
-# Emote_Widget友商的桌宠框架，兼容 Emote 模型
+# [Emote_Widget](https://github.com/703519523/Emote_Widget) 专为Python设计的 E-Mote 2D 模型加载框架
 
 > 👍 *基于FreeEmote SDK的次世代桌宠框架 —— 轻量、完备、可扩展。*
 
@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <b>Emote_Widget</b> · 是一个基于 PySide6 的功能完备的动态角色显示组件，专为加载和控制 Emote 模型而设计。
+  <b><a href="https://github.com/703519523/Emote_Widget">Emote_Widget</a></b> · 是一个基于 PySide6 和 FreeMote 的功能完备的动态角色显示框架，专为加载和控制 E-Mote 模型而设计。
   <br><br>
   <img src="https://img.shields.io/badge/Platform-PC-blue">
   <img src="https://img.shields.io/github/stars/703519523/Emote_Widget?style=social">
