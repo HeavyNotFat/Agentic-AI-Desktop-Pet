@@ -1,13 +1,13 @@
-# Emote_Widget友商的桌宠，兼容Emote模型
+# Emote_Widget友商的桌宠框架，兼容 Emote 模型
 
-> 🎧 *基于FreeEmote SDK的次世代桌宠 —— 轻量、美观、可扩展。*
+> 👍 *基于FreeEmote SDK的次世代桌宠框架 —— 轻量、完备、可扩展。*
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/faa4741e-1837-4169-968d-0c1169934310" width="160" alt="EmoteWidgetLogo">
+  <img src="https://github.com/user-attachments/assets/7edd815b-0756-451a-b5dc-9ed0462c6fd1" alt="EmoteWidgetLogo">
 </p>
 
 <p align="center">
-  <b>Emote_Widget</b> · Emote_Widget 是一个基于 PySide6 的功能完备的动态角色显示组件，专为加载和控制 FreeMote模型而设计。它提供了一套高级、纯粹的 Python API，将所有与底层 Web 引擎和 JavaScript 的复杂交互完全封装，让开发者可以轻松地将交互式 2D 角色集成到桌面应用中。
+  <b>Emote_Widget</b> · 是一个基于 PySide6 的功能完备的动态角色显示组件，专为加载和控制 Emote 模型而设计。
   <br><br>
   <img src="https://img.shields.io/badge/Platform-PC-blue">
   <img src="https://img.shields.io/github/stars/703519523/Emote_Widget?style=social">
