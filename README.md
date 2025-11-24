@@ -1,4 +1,19 @@
-@ 非常重要的事情！ The most important thing!
+# Emote_Widget友商的桌宠，兼容Emote模型
+
+> 🎧 *基于FreeEmote SDK的次世代桌宠 —— 轻量、美观、可扩展。*
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a90a6fc0-282a-4088-a3e0-46ce5534ebd2" width="160" alt="EmoteWidgetLogo">
+</p>
+
+<p align="center">
+  <b>Emote_Widget</b> · Emote_Widget 是一个基于 PySide6 的功能完备的动态角色显示组件，专为加载和控制 FreeMote模型而设计。它提供了一套高级、纯粹的 Python API，将所有与底层 Web 引擎和 JavaScript 的复杂交互完全封装，让开发者可以轻松地将交互式 2D 角色集成到桌面应用中。
+  <br><br>
+  <img src="https://img.shields.io/badge/Platform-PC-blue">
+  <img src="https://img.shields.io/github/stars/703519523/Emote_Widget?style=social">
+</p>
+
+# 非常重要的事情！ The most important thing!
 
 > [!CAUTION]
 > Due to financial challenges and uncertainties regarding the project's future direction, I have made the difficult decision to discontinue further development. This project was initially conceived on August 12, 2024, officially launched on January 18, 2025, and is
