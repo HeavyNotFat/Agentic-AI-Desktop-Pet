@@ -13,9 +13,9 @@
   <img src="https://img.shields.io/github/stars/703519523/Emote_Widget?style=social">
 </p>
 
-# 此项目已由 Nanoooii 以一万人民币价格 收购
+# 此项目已由 Nanoooii 以五万人民币价格（软件）  + 一万人民币（硬件）收购
 
-# This project has been acquired by Nanoooii for ten thousand CNY.
+# This project has been acquired by Nanoooii for five thousand CNY for software and one thousand for hardware.
 
 > 开发者不再维护此项目！感谢所有用户
 >
