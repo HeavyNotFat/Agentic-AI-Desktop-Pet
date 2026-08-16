@@ -1,0 +1,14 @@
+# This is a sample to add a SubInterface UI into Setting GUI
+# Go https://nekocode.top/?p=65 to see details
+
+from PyQt5.QtWidgets import QWidget
+from qfluentwidgets import FluentIcon
+
+
+class Test(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setObjectName('TestInterface')
+
+interface.subscribe.views.Setting.InsertInterface(Test(), FluentIcon.SETTING, "test")
+

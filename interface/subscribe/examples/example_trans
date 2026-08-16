@@ -1,0 +1,107 @@
+import typing
+import re
+import threading
+
+from PyQt5.Qt import QDropEvent, QObject, pyqtSignal
+import requests
+
+cache_to_be_translated: list = []
+cache_translated_text: list = []
+
+
+class TranslationWorker(QObject):
+    finished = pyqtSignal(str, int)
+
+    def __init__(self, to_be_translated_text, target_language):
+        super().__init__()
+        self.to_be_translated_text = to_be_translated_text
+        self.target_language = target_language
+
+    def run(self):
+        translated_text = machine_translate(self.to_be_translated_text, self.target_language)
+        words_count = len(translated_text.split()) * 100 + 6500
+        self.finished.emit(translated_text, words_count)
+
+
+def count_language_numbers(text) -> int:
+    """
+    0 -> 中文多或一样多
+    1 -> 英文多
+    """
+    chinese_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    english_count = len(re.findall(r'[a-zA-Z]', text))
+    if chinese_count > english_count:
+        return 0
+    else:
+        return 1
+
+
+def machine_translate(words, target: typing.Literal['zh-Hans', 'en', 'ja', 'ko'] = "zh-Hans"):
+    """必应机器翻译"""
+    # 定义目标URL以获取翻译服务的访问地址
+    uri = 'https://cn.bing.com/translator'
+    # 发起GET请求获取网页内容，用于提取必要的请求参数
+    gi = requests.get(uri).text
+    ig = re.search(r'IG:"(.*?)"', gi).group(1)
+    token = re.search(r'params_AbusePreventionHelper = (.*?);', gi).group(1)
+    tokens = token.replace("[", "")
+    js = tokens.split(',')
+    t = js[1][1:33]
+    url = 'https://cn.bing.com/ttranslatev3?isVertical=1&&IG={}&IID=translator.5027'.format(ig)
+
+    # 准备POST请求的数据，包括源语言、目标语言、文本内容等
+    data = {
+        'fromLang': 'auto-detect',
+        'text': words,
+        'to': target,
+        'token': t,
+        'key': js[0],
+        'tryFetchingGenderDebiasedTranslations': 'true'
+    }
+
+    # 设置请求的头部信息，模拟浏览器访问
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    }
+
+    # 发送POST请求，获取翻译服务的响应
+    response = requests.post(url, data=data, headers=headers)
+    response.raise_for_status()
+    translations = response.json()[0]['translations']
+    translated_text = translations[0]['text']
+
+    return translated_text
+
+
+def drop_result(qt_mime: QDropEvent, ana_mime: list[tuple[str, str]]):
+    def show(translated_text, words_count):
+        cache_to_be_translated.append(to_be_translated_text)
+        cache_translated_text.append(translated_text)
+        interface.subscribe.interact.ShowOnBoard.ShowText(translated_text, words_count)
+
+    if ana_mime[0][0] == interface.subscribe.standards.MIME_DRAG_PURE_TEXT:
+        pure_text_entries = list(filter(lambda x: x[0] == interface.subscribe.standards.MIME_DRAG_PURE_TEXT,
+                                            ana_mime))
+        to_be_translated_text = [entry[1] for entry in pure_text_entries]
+        to_be_translated_text = '\n'.join(to_be_translated_text)
+        print(f"翻译：{to_be_translated_text}")
+
+        # 排除
+        if to_be_translated_text in cache_to_be_translated:
+            show(cache_translated_text[cache_to_be_translated.index(to_be_translated_text)],
+                len(str(cache_translated_text[cache_to_be_translated.index(to_be_translated_text)]).split()) * 100 + 6500
+            )
+            return
+
+        if count_language_numbers(to_be_translated_text) == 0:
+            target_language = 'en'
+        else:
+            target_language = 'zh-Hans'
+
+        worker = TranslationWorker(to_be_translated_text, target_language)
+        thread = threading.Thread(target=worker.run)
+        worker.finished.connect(show)
+        thread.start()
+
+
+interface.subscribe.actions.Register.SetDropAction(drop_result)

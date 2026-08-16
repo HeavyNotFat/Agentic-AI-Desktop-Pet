@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>大模型对话界面</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo.ico') }}" type="image/x-icon">
+    <!-- 引入marked库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="{{ url_for('static', filename='logo.ico') }}" alt="Logo" class="logo">
+
+        <!-- 聊天窗口 -->
+        <div id="chat-window" class="chat-window">
+            <!-- 聊天内容将动态加载到这里 -->
+        </div>
+
+        <!-- 输入框和发送按钮 -->
+        <div class="input-area">
+            <input type="text" id="message-input" placeholder="输入消息..." class="input-field">
+            <button id="send-button" class="send-button">发送</button>
+        </div>
+
+        <div id="result" style="text-align:center; margin-top:20px;"></div>
+    </div>
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

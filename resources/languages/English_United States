@@ -1,0 +1,259 @@
+AI-Agent Desktop Pet Settings
+General
+Pet Appearance
+Delete Character
+Translation Tool
+Adult Mode
+Voice Model
+Test Listen
+Watermark
+Character Transparency
+Switch
+Switch List
+Screen Recording Compatibility
+Voice Recognition
+AI Voice
+Online Search
+Translation
+Advanced Switch
+Media Understanding
+Global Mouse Penetration
+Disable
+At Next Startup
+Left Click Bottom
+Left Click Top
+Right Click Bottom
+Right Click Top
+Taskbar Lock
+Artificial Intelligence
+Reasoning
+Cloud Reasoning
+Aliyun API-Key
+Local Reasoning
+Text Model
+Cloud
+Local
+Save Settings
+Extension Tools
+Source Python File Path
+Compile into Program
+Animation Binding
+Model
+Parameters
+Action Group
+Action Name
+Save
+Expression
+Audio
+Playback Method
+Animation
+Rules
+AI Desktop Pet Related Instructions
+Engage in Conversation
+Switch Characters
+Auto Blink
+Auto Breathing
+Auto Drag
+Text Output
+Voice Recognition
+Chat
+Mouse Passes Through Desktop Pet (Cannot Operate the Pet!)
+When Moving the Pet, It Will Never Exceed the Taskbar
+Formatting Instructions
+1. {year} represents the current year
+2. {ip} represents your device’s IP
+No model input
+Bound action file names, ordered from top to bottom in the "motions" folder
+Keeping model, it can't be deleted
+Start Recording: You need to click "Record" on your character. Click twice—once for the minimum value, once for the maximum value.
+Compilation Complete
+Confirm?
+Waiting for Your Chat…
+Compatible Models
+The model may not support Live2D Cubism 2.0 Core. If it is 2.0 Core, it may require modeling with a 64-bit application. 32-bit applications are not supported.
+Your model does not support Live2D Cubism 2.0 Core. The program has a built-in 2.0 Core model. Would you like to enable it?
+Restarting the program is required to enable the compatible model.
+Folder Path
+Run
+Terminate
+Error
+Function Entry
+Artificial Intelligence - AI
+Tongyi Qianwen - Tongyi
+Crawler Translation - Spider
+Bing Translation - Bing
+Add Character
+Enable Desktop Pet to Be Captured by Screen Recording (Disables "Stay Above Taskbar" Function)
+Enable Desktop Pet to Understand Images/Videos (Includes Active Agent)
+Gentlemen Know What This Means~
+Save Successful!
+You Need to Restart to Apply Updates~
+Enable Desktop Pet to Understand Your Speech
+Make Your Desktop Pet Speak
+Desktop Pet Can Surf the Web
+Speech (AI Voice) Translated to Language that you want to translate to
+Image Processing
+iFlytek ID
+iFlytek Key
+iFlytek Secret
+Text Output Parameters
+Voice Parameters
+Playback Failed
+Developer Tools
+Check for Updates
+To Be Checked
+Yay! You’re on the Latest Version!!
+Oops, Looks Like You’re Not on the Latest Version {latest}!
+Done🥚, Looks Like There Was an Issue Checking for Updates!
+Checking…
+Termination Failed
+Termination Successful!
+Run
+Terminate
+Program Enhancement
+Standalone Program
+Auto Select
+No File
+Import File
+Optimization Suggestions
+There’s an Infinite Loop in the Code!
+The User Enabled Security Checks, and Your Plugin Cannot Execute Due to Violating Security Check Rules!
+L1 - Light Protection
+L2 - Mild Protection
+L3 - Moderate Protection
+L4 - High Protection
+L5 - Heavy Protection
+Plugin Security Check Function
+Security Check
+Text Output API
+Voice Synthesis API
+Settings
+About
+Language
+Plugins
+Binding Settings
+Select Folder
+Select File
+Import Audio
+Thinking…
+Audio Visualization
+Will display blocks of different heights above the desktop pet based on the volume.
+Failed to add
+Invalid file structure
+ave as...
+Move to...
+Open File
+Open In Explorer
+Email
+Password
+Login
+Register
+Captcha
+Get Captcha
+Remember me
+Record
+Local NetWork URL:
+Recognition Sampling
+Pure AVG（sum(s) / len(s)）
+AVG Min+（sum(s) / len(s) + min(s)）
+AVG Max+（sum(s) / len(s) + max(s)）
+Double AVG（sum(s) / len(s) * 2）
+Sampling needs to be done in a quiet environment, and it will record the environment and calculate the volume. The sampling data will be calculated based on the algorithm (Algorithm).
+Compatible architecture
+Your model architecture is not compatible with the current architecture. You need to restart the program to reload the architecture!
+It's different from the architecture version and the engine version. If you load it multiple times, it may cause the shader to crash.
+Character Sets
+Save Successfully!
+System role can only exits one
+Please select user group and try again
+Add System Permission Set
+Add User Permission Set
+Add Assistant Permission Set
+Delete Current Row
+Get Assistant Response
+Save and Apply
+UNDO!
+Trigger Words
+Execute Expr
+Add
+Delete
+Clone Character
+Delete this Cloning...
+Cute cloning character --- {name}
+Sky cracks open — here comes {name}!
+Physics Simulation
+Physics Calculation
+enable physics calculation (Gravity acceleration, elastic potential energy)
+elastic potential energy
+Bounce up when it falls to the ground
+Damping Motion
+Consideration of reduction of kinetic energy based on resistance when throwing (parabolic motion)
+Character Size
+Clone
+Delete all cloning
+Ready to compile
+Step.1 Select icon
+Step.2 Input name
+Input name
+Some Live2D models are downloaded from the Internet. If there is any infringement, please contact 2953911716@qq.com to delete them.
+Enable Realtime API Option
+It's used to enable independent program API interface (http://127.0.0.1:8210)
+Close Mouse Penetration
+Download
+Model Download
+Downloading...
+Failed to Download
+Already had
+Cloud Store
+Downloading
+{name} is downloading, please wait...
+Download Completed!
+Plugin Download
+Storage Manager
+Realtime API has started! Please note that you may be attacked!
+Realtime API server has been closed!
+Local Python Path
+Independent plugin Python
+Times
+Algorithm
+Sampling
+Program used space ratio in {disk}
+Program used space ratio in disk
+Restore Factory Settings
+Restore Configuration
+Restore Switch Configuration
+Restore AI Configuration
+Restore Server Script
+Sure?
+Success
+Warning
+Cancel restoring
+Failure
+This object will delete all configurations (including models, sound materials and all configurations), are you sure to continue?
+Are you sure to restore this item?
+Enable
+Target Language
+Simplified Chinese
+English (American)
+Japanese
+Korean
+Translation Engine
+Text
+Number
+Logic
+List
+Description
+Export Animation Configure
+Import Animation Configure
+Export successfully
+Export failed
+This is indepent plugin, please check whether Python is installed or whether the Python path is selected to use\nPlease note that this plugin has a README and installation document and detailed explanations\nPython official website: https://python.org
+
+
+Pet the head
+Stroke the legs
+Click the hat
+Click the chest
+Custom touch
+Custom click
+Startup event

@@ -1,0 +1,10 @@
+ollama
+openai-whisper
+pyaudio
+
+websocket-client
+websockets
+requests
+fastapi
+uvicorn
+pydantic

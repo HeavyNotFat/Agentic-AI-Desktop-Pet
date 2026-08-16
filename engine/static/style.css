@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+}
+
+/* style.css */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    margin-left: auto;
+    background-color: #e1ffc7;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.ai-message {
+    margin-right: auto;
+    background-color: #fff0f5;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.input-area {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+}
+
+.input-field {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: background-color .3s;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .logo {
+        margin: 20px auto;
+        width: 40px;
+        height: 40px;
+    }
+
+    .chat-window {
+        padding: 15px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-field {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 100%;
+    }
+
+    .send-button {
+        width: 100%;
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: -1px; /* 解决边框重叠问题 */
+    }
+}

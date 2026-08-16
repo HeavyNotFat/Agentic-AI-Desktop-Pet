@@ -1,0 +1,15 @@
+{
+	[2026-06-21 13:47:27] 
+ [LOGGING]: 
+子应用 - AI剧情问答 调用成功
+   Message: AI Answer failed to call: 
+
+No API-key provided.
+
+未提供 API 密钥。
+}
+{
+	[2026-06-21 13:51:53] 
+ [LOGGING]: 
+程序退出 Program exit
+}

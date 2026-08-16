@@ -1,0 +1,17 @@
+{
+    "QFluentWidgets": {
+        "FontFamilies": [
+            "Segoe UI",
+            "Microsoft YaHei",
+            "PingFang SC"
+        ],
+        "ThemeColor": "#ff009faa",
+        "ThemeMode": "Light"
+    },
+    "Inference": {
+        "media": "cloud",
+        "recognition": "cloud",
+        "text_output": "cloud",
+        "voice": "cloud"
+    }
+}

@@ -1,0 +1,26 @@
+# This is a sample to get available attributes
+# Go Plugin Logger to see the result of printing...
+# Go https://nekocode.top/?p=65 to see details
+
+import string
+
+def show(module, text):
+    for m in dir(module):
+        if not callable(getattr(module, m)) and "__" not in m and m[0] != "_" and m[0] in string.ascii_uppercase:
+            print(f"{text}.{m}")
+            print(dir(getattr(module, m)), "\n")
+
+
+print(f"{'=' * 20} Basic Supported {'=' * 20}")
+# Show Callable function
+show(interface.subscribe, "interface.subscribe")
+print(f"{'=' * 20} Views Supported {'=' * 20}")
+show(interface.subscribe.views, "interface.subscribe.views")
+print(f"{'=' * 20} Actions Supported {'=' * 20}")
+show(interface.subscribe.actions, "interface.subscribe.actions")
+print(f"{'=' * 20} Standards Supported {'=' * 20}")
+show(interface.subscribe.standards, "interface.subscribe.standards")
+print(f"{'=' * 20} Supported {'=' * 20}")
+
+# Request character model
+print(interface.subscribe.Character.GetCharacter())

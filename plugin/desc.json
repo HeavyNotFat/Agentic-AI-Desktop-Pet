@@ -1,0 +1,16 @@
+{
+   "@// comments //@": {
+      "-4": "自动选择 Automatic",
+      "-3": "独立程序 Independent",
+      "-2": "程序增强 Enhancement"
+   },
+   "@// format //@": [
+      {
+         "<PluginFolderName>": {
+            "icon": "<qfluentwidgets.FluentIcon.<ICON>> | <Your Icon Path> | Empty is up to program",
+            "name": "<PluginName>",
+            "attr": "<See '@// comments //@' for details>"
+         }
+      }
+   ]
+}
